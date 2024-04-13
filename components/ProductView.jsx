@@ -42,7 +42,7 @@ const ProductView = ({product,selectedProducts,setSelectedProducts}) => {
     <View style={styles.productContainer}>
       <View style={{flex : 1,justifyContent :"space-between"}}>
         <Text style={styles.text}>{product.product_name}</Text>
-        <Text style={styles.text}>{product.price}</Text>
+        <Text style={styles.text}>{product.quantity} * {product.price} DH/u</Text>
       </View>
       <View style={styles.row}>
         <TouchableOpacity style={styles.btn} onPress={decrement} disabled={product.quantity === 1}>
